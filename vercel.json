@@ -1,8 +1,5 @@
 {
   "version": 2,
   "buildCommand": "yarn build",
-  "outputDirectory": "build",
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "public": true
+  "outputDirectory": "build"
 }
