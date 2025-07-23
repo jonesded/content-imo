@@ -1,13 +1,13 @@
-# Licenses for MDN content
+# Licenses for HNM Devs Docs Content
 
-MDN's content (including prose and code examples) is entirely available
+HNM Devs Docs content (including documentation, prose, and code examples) is entirely available
 under various open source licenses. This file covers the types of
 content we provide and what licenses are in effect for each.
 
 ## License for all prose content
 
 All prose content is available under
-([CC-BY-SA 2.5](https://creativecommons.org/licenses/by-sa/2.5/)).
+([CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)).
 
 ### Text of CC-BY-SA-2.5 license
 
