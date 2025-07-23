@@ -1,56 +1,80 @@
-# Welcome to MDN Web Docs
+# Welcome to HNM Devs Docs
 
-![github-profile](https://user-images.githubusercontent.com/10350960/166113119-629295f6-c282-42c9-9379-af2de5ad4338.png)
+![HNM Devs Banner](https://via.placeholder.com/800x200/1a1a1a/00ff88?text=HNM+DEVS+DOCS)
 
-[MDN Web Docs][] is an open-source, collaborative project that documents web technologies including CSS, HTML, JavaScript, and Web APIs.
-Alongside detailed reference documentation, we provide extensive learning resources for students and beginners getting started with web development.
+[HNM Devs Docs][] is a comprehensive, open-source developer documentation platform that provides cutting-edge resources for modern web development, cloud technologies, DevOps practices, and emerging tech stacks.
 
-## MDN's mission
+## Our Mission
 
-MDN's mission is to provide a blueprint for a better internet and empower a new generation of developers and content creators to build it.
+HNM Devs is committed to empowering developers with practical, up-to-date documentation that bridges the gap between theory and real-world implementation. We focus on:
 
-The strength of MDN Web Docs lies in its vast community of active readers and contributors.
-Since 2005, approximately 45,000 contributors have created the documentation we know and love.
-Together, contributors have created over 45,000 documents that make up an up-to-date, comprehensive, and free resource for web developers worldwide.
+- **Modern Development Practices**: Latest frameworks, tools, and methodologies
+- **Cloud-Native Solutions**: Kubernetes, Docker, microservices, and serverless architectures
+- **DevOps Excellence**: CI/CD, infrastructure as code, and automation best practices
+- **Performance & Security**: Optimization techniques and security-first development
+- **Emerging Technologies**: AI/ML integration, Web3, and next-generation tools
 
-In addition to English-language articles, over 35 volunteers lead translation and localization efforts for Chinese, French, Japanese, Korean, Portuguese, Russian, and Spanish.
+## Why HNM Devs Docs?
 
-## Build the site
+Unlike traditional documentation, HNM Devs Docs provides:
 
-To set up the site locally, you need to have [Node.js](https://nodejs.org/) and [Yarn](https://classic.yarnpkg.com/) installed.
-You can check if these are installed by running the following commands:
+✨ **Practical Examples**: Real-world code samples and implementation guides
+🚀 **Performance-First**: Optimized solutions and best practices
+🔒 **Security-Focused**: Security considerations baked into every guide
+🌐 **Cloud-Ready**: Modern deployment and scaling strategies
+📱 **Mobile-Optimized**: Responsive design for developers on the go
+
+## Quick Start
+
+To set up the documentation site locally, ensure you have [Node.js](https://nodejs.org/) (v22+) and [Yarn](https://classic.yarnpkg.com/) installed:
 
 ```bash
+# Check your versions
 node -v
 yarn -v
-```
 
-After you have installed Node.js and Yarn, you can install the dependencies using `yarn` and start the local preview:
-
-```bash
-yarn
+# Install dependencies and start development server
+yarn install
 yarn start
 ```
 
-Once started, a live preview is available at `http://localhost:5042/`.
+The development server will be available at `http://localhost:5042/` with hot reloading enabled.
 
-## Contribute to MDN Web Docs
+## Contributing to HNM Devs Docs
 
-You can contribute to MDN Web Docs and be a part of our community through content contributions, engineering, or translation work.
-The MDN Web Docs project welcomes contributions from everyone who shares our goals and wants to contribute constructively and respectfully within our community.
+We welcome contributions from developers worldwide! Whether you're fixing typos, adding new guides, or improving existing content, your contributions help build a better developer experience.
 
-To find out how to get started, see the [CONTRIBUTING.md](CONTRIBUTING.md) document in this repository.
-By participating in and contributing to our projects and discussions, you acknowledge that you have read and agree to our [Code of Conduct](CODE_OF_CONDUCT.md), which means adhering to [Mozilla's Community Participation Guidelines](https://www.mozilla.org/en-US/about/governance/policies/participation/).
+### Ways to Contribute
 
-## Get in touch
+- 📝 **Content**: Write guides, tutorials, and reference documentation
+- 🐛 **Bug Reports**: Help us identify and fix issues
+- 💡 **Feature Requests**: Suggest new documentation topics or improvements
+- 🌍 **Translations**: Help make our content accessible globally
+- 🎨 **Design**: Improve the user experience and visual design
 
-You can communicate with the MDN Web Docs team and community using the [communication channels][].
+To get started, check out our [CONTRIBUTING.md](CONTRIBUTING.md) guide and review our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-<!---
-Reference links syntax is used here because of linting markdown files ("fqdn-moz-links" rule).
-See https://github.com/mdn/content/pull/21432 and https://github.com/mdn/content/pull/38369.
-It can be replaced with the normal links syntax after successfully closing https://github.com/DavidAnson/markdownlint/issues/673.
--->
+## Community & Support
 
-[mdn web docs]: https://developer.mozilla.org
-[communication channels]: https://developer.mozilla.org/en-US/docs/MDN/Community/Communication_channels
+Join our vibrant developer community:
+
+- 💬 **Discord**: [HNM Devs Community](https://discord.gg/hnmdevs)
+- 🐦 **Twitter**: [@HNMDevs](https://twitter.com/HNMDevs)
+- 📧 **Email**: support@hnmdevs.com
+- 🎯 **GitHub Discussions**: Share ideas and get help
+
+## Technology Stack
+
+HNM Devs Docs is built with:
+
+- **Frontend**: React with Next.js
+- **Build System**: Rari (custom MDN build tool)
+- **Content**: Markdown with frontmatter
+- **Styling**: Modern CSS with design tokens
+- **Deployment**: Automated CI/CD pipeline
+
+---
+
+**Made with ❤️ by the HNM Devs team and contributors worldwide**
+
+[hnm devs docs]: https://docs.hnmdevs.com
