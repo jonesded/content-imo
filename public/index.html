@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HNM Devs Docs - Modern Developer Documentation Platform</title>
+    <style>
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        min-height: 100vh;
+      }
+      .container {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        background: linear-gradient(135deg, #00ff88, #ff6b00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+      }
+      .banner {
+        background: linear-gradient(135deg, #00ff88, #00cc6a);
+        color: #1a1a1a;
+        padding: 15px 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      .links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 30px 0;
+      }
+      .link-card {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #00ff88;
+        text-decoration: none;
+        color: #333;
+        transition: transform 0.2s;
+      }
+      .link-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .link-card h3 {
+        margin: 0 0 10px 0;
+        color: #00ff88;
+      }
+      .debug {
+        background: #f1f5f9;
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 40px;
+        font-size: 0.9rem;
+        color: #64748b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 HNM Devs Docs</h1>
+
+      <div class="banner">
+        ✨ NEW: Welcome to the newly rebranded HNM Devs Docs! This platform has
+        been completely redesigned with modern developers in mind.
+      </div>
+
+      <p>
+        <strong
+          >The modern developer documentation platform for building
+          next-generation applications.</strong
+        >
+      </p>
+
+      <p>
+        HNM Devs Docs provides comprehensive, practical resources for developers
+        working with modern web technologies, cloud-native solutions, DevOps
+        practices, and emerging tech stacks.
+      </p>
+
+      <div class="links">
+        <a href="/en-US/docs/Web" class="link-card">
+          <h3>🌐 Web Development</h3>
+          <p>Modern frameworks, JavaScript/TypeScript, and web standards</p>
+        </a>
+
+        <a href="/en-US/docs/Web/JavaScript" class="link-card">
+          <h3>📜 JavaScript</h3>
+          <p>Modern JavaScript and TypeScript development</p>
+        </a>
+
+        <a href="/en-US/docs/Web/CSS" class="link-card">
+          <h3>🎨 CSS & Design</h3>
+          <p>Advanced styling and design systems</p>
+        </a>
+
+        <a href="/en-US/docs/Web/API" class="link-card">
+          <h3>⚡ Web APIs</h3>
+          <p>Browser APIs and web standards</p>
+        </a>
+      </div>
+
+      <h2>Why Choose HNM Devs Docs?</h2>
+      <ul>
+        <li>
+          <strong>✨ Practical Focus:</strong> Real-world examples and
+          production-ready code
+        </li>
+        <li>
+          <strong>🚀 Performance First:</strong> Optimized solutions and best
+          practices
+        </li>
+        <li>
+          <strong>🌍 Community Driven:</strong> Built by developers, for
+          developers
+        </li>
+        <li>
+          <strong>📱 Modern & Accessible:</strong> Responsive design and
+          accessibility compliance
+        </li>
+      </ul>
+
+      <h2>Get Involved</h2>
+      <p>Help us build better documentation for the developer community:</p>
+      <ul>
+        <li>
+          <strong><a href="https://github.com/hnmdevs/docs">GitHub</a></strong>
+          - Source code and issues
+        </li>
+        <li>
+          <strong><a href="https://discord.gg/hnmdevs">Discord</a></strong> -
+          Real-time discussions
+        </li>
+        <li>
+          <strong><a href="https://twitter.com/HNMDevs">Twitter</a></strong> -
+          Updates and announcements
+        </li>
+      </ul>
+
+      <div class="debug">
+        <strong>Debug Info:</strong><br />
+        • Current URL: <span id="currentUrl"></span><br />
+        • Timestamp: <span id="timestamp"></span><br />
+        • User Agent: <span id="userAgent"></span>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("currentUrl").textContent = window.location.href;
+      document.getElementById("timestamp").textContent =
+        new Date().toISOString();
+      document.getElementById("userAgent").textContent =
+        navigator.userAgent.substring(0, 100) + "...";
+
+      // Auto-redirect after 5 seconds if main docs are available
+      setTimeout(() => {
+        console.log("Attempting redirect to main docs...");
+        // Try different possible paths
+        const possiblePaths = [
+          "/en-US/docs/Web/",
+          "/en-US/docs/Web",
+          "/en-us/docs/web/",
+          "/docs/Web/",
+          "/Web/",
+        ];
+
+        // Check if we can find any working path
+        possiblePaths.forEach((path, index) => {
+          setTimeout(() => {
+            fetch(path, { method: "HEAD" })
+              .then((response) => {
+                if (response.ok) {
+                  console.log(`Found working path: ${path}`);
+                  window.location.href = path;
+                }
+              })
+              .catch(() => {
+                console.log(`Path not found: ${path}`);
+              });
+          }, index * 500);
+        });
+      }, 5000);
+    </script>
+  </body>
+</html>
