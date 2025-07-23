@@ -1,8 +1,10 @@
 ---
-title: HNM Devs Docs - Modern Developer Documentation
+title: HNM Devs Docs - Modern Developer Documentation Platform
 slug: /
 page-type: landing-page
 ---
+
+> **🚀 NEW:** Welcome to the newly rebranded HNM Devs Docs! This platform has been completely redesigned with modern developers in mind.
 
 **The modern developer documentation platform for building next-generation applications.**
 
