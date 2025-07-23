@@ -2,10 +2,7 @@
 title: HNM Devs Docs - Modern Developer Documentation
 slug: /
 page-type: landing-page
-browser-compat: false
 ---
-
-# Welcome to HNM Devs Docs
 
 **The modern developer documentation platform for building next-generation applications.**
 
@@ -14,6 +11,7 @@ HNM Devs Docs provides comprehensive, practical resources for developers working
 ## Quick Navigation
 
 ### 🌐 Web Development
+
 Master modern web technologies and frameworks.
 
 - **[Frontend Frameworks](/en-us/web/frameworks/)** - React, Vue, Svelte, Angular
@@ -23,6 +21,7 @@ Master modern web technologies and frameworks.
 - **[Performance](/en-us/web/performance/)** - Optimization techniques
 
 ### ☁️ Cloud & Infrastructure
+
 Build scalable, cloud-native applications.
 
 - **[Docker & Containers](/en-us/cloud/containers/)** - Containerization best practices
@@ -32,14 +31,17 @@ Build scalable, cloud-native applications.
 - **[Infrastructure as Code](/en-us/cloud/iac/)** - Terraform, CloudFormation
 
 ### 🔒 Security & Best Practices
+
 Secure development from the ground up.
 
 - **[Application Security](/en-us/security/application/)** - Secure coding practices
 - **[Authentication](/en-us/security/auth/)** - OAuth, JWT, and identity management
 - **[Data Protection](/en-us/security/data/)** - Encryption and privacy
+
 - **[DevSecOps](/en-us/security/devsecops/)** - Security in CI/CD pipelines
 
 ### 🚀 Emerging Technologies
+
 Stay ahead with cutting-edge tech.
 
 - **[AI/ML Integration](/en-us/emerging/ai-ml/)** - AI APIs and machine learning
@@ -82,11 +84,13 @@ Secure your APIs with authentication, rate limiting, and validation.
 ## Community Spotlight
 
 ### 📊 Latest Updates
+
 - **[Next.js 15 Migration Guide](/en-us/web/frameworks/nextjs/v15-migration/)** - Upgrade smoothly to the latest version
 - **[Docker Multi-stage Builds](/en-us/cloud/containers/multi-stage/)** - Optimize your container images
 - **[TypeScript 5.3 Features](/en-us/web/javascript/typescript/5.3/)** - New language features and improvements
 
 ### 🎯 Community Contributions
+
 - **Performance optimization strategies** by @devmaster
 - **Kubernetes networking deep dive** by @cloudninja
 - **React Server Components guide** by @frontendguru
@@ -111,9 +115,9 @@ Cloud Basics → Serverless → Containers → Infrastructure → Security
 
 ### Quick Start Templates
 
-```javascript
+```js
 // Modern React Component with TypeScript
-import React from 'react';
+import React from "react";
 
 interface Props {
   title: string;
@@ -147,13 +151,13 @@ spec:
         app: hnm-app
     spec:
       containers:
-      - name: app
-        image: hnmdevs/app:latest
-        ports:
-        - containerPort: 3000
+        - name: app
+          image: hnmdevs/app:latest
+          ports:
+            - containerPort: 3000
 ```
 
-```dockerfile
+```bash
 # Optimized Docker Multi-stage Build
 FROM node:18-alpine AS builder
 WORKDIR /app
@@ -165,29 +169,36 @@ WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules
 COPY . .
 EXPOSE 3000
+
 CMD ["npm", "start"]
 ```
 
 ## Why Choose HNM Devs Docs?
 
 ### ✨ **Practical Focus**
+
 Every guide includes real-world examples and production-ready code that you can use immediately.
 
 ### 🚀 **Performance First**
+
 We prioritize performance, security, and scalability in all our recommendations and examples.
 
 ### 🌍 **Community Driven**
+
 Built by developers, for developers. Contributions from the global developer community.
 
 ### 📱 **Modern & Accessible**
+
 Responsive design, dark mode support, and full accessibility compliance.
 
 ### 🔄 **Always Current**
+
 Regular updates to keep pace with the rapidly evolving development landscape.
 
 ## Get Involved
 
 ### 🤝 Contributing
+
 Help us build better documentation for the developer community.
 
 - **[Contributor Guide](/en-us/contributing/)** - How to contribute content
@@ -195,11 +206,14 @@ Help us build better documentation for the developer community.
 - **[Community Guidelines](/en-us/community/guidelines/)** - Be part of our community
 
 ### 💬 Connect With Us
+
 - **[Discord Community](https://discord.gg/hnmdevs)** - Real-time discussions
 - **[GitHub](https://github.com/hnmdevs/docs)** - Source code and issues
 - **[Twitter](https://twitter.com/HNMDevs)** - Updates and announcements
 
 ---
+
+\_\_
 
 <div class="footer-cta">
 
@@ -213,4 +227,4 @@ Start with our **[Quick Start Guide](/en-us/guides/quick-start/)** or explore ou
 
 ---
 
-*Last updated: December 2024 • [Edit this page](https://github.com/hnmdevs/docs/edit/main/files/en-us/index.md)*
+_Last updated: December 2024 • [Edit this page](https://github.com/hnmdevs/docs/edit/main/files/en-us/index.md)_
