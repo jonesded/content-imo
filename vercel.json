@@ -1,18 +1,9 @@
 {
   "version": 2,
   "name": "hnm-devs-docs",
-  "build": {
-    "env": {
-      "NODE_VERSION": "22"
-    }
-  },
   "buildCommand": "yarn build",
   "outputDirectory": "build",
   "installCommand": "yarn install",
-  "devCommand": "yarn start",
-  "framework": null,
-  "public": false,
-  "functions": {},
   "headers": [
     {
       "source": "/(.*)",
